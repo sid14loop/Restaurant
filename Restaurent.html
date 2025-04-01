@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Restaurant Landing</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url('https://www.example.com/restaurant-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: rgb(132, 0, 0);
+    }
+
+    /* Navigation */
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #ff6347;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .cta-button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background-color: #ff6347;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #ff4500;
+    }
+
+    /* Menu Section */
+    .menu {
+      padding: 50px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+    }
+
+    .menu h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .menu-item {
+      display: inline-block;
+      margin: 20px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .menu-item h3 {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    .menu-item p {
+      font-size: 1.1rem;
+    }
+
+    /* Reservation Section */
+    .reservation {
+      padding: 50px 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      text-align: center;
+    }
+
+    .reservation h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .reservation form input,
+    .reservation form textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+    }
+
+    .reservation form button {
+      padding: 12px 30px;
+      background-color: #ff6347;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .reservation form button:hover {
+      background-color: #ff4500;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 50px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 1.2rem;
+    }
+
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    footer p {
+      font-size: 1rem;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div><a href="#">Restaurant</a></div>
+      <div>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reservation</a>
+        <a href="#contact">Contact</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Welcome to Our Restaurant</h1>
+      <p>Enjoy the best dining experience</p>
+      <button class="cta-button">Reserve a Table</button>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+      <img src="https://www.marthastewart.com/thmb/S9xVtnWSHldvxPHKOxEq0bALG-k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MSL-338686-spaghetti-carbonara-hero-3x2-69999-560b45d1dd9f4741b717176eff024839.jpeg" alt="Dish 1">
+      <h3>Spaghetti Carbonara</h3>
+      <p>A traditional Italian pasta dish made with creamy egg sauce, crispy pancetta, and a generous sprinkle of parmesan, delivering a rich and savory flavor.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://assets.bonappetit.com/photos/5ea8f0df16738800085ad5d2/1:1/w_2560%2Cc_limit/Chicken-Parmesean-Recipe-Lede.jpg" alt="Dish 2">
+      <h3>Chicken Parmesan
+    </h3>
+      <p>Breaded chicken breast topped with marinara sauce and melted mozzarella cheese, served over a bed of pasta for a comforting and hearty meal.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://www.cookingclassy.com/wp-content/uploads/2019/12/chicken-stir-fry-1.jpg" alt="Dish 3">
+      <h3>Vegetable Stir-Fry</h3>
+      <p>A vibrant mix of fresh seasonal vegetables stir-fried in a savory soy-ginger sauce, served with steamed rice, perfect for a healthy and satisfying option.
+ </p>
+    </div>
+  </section>
+
+
+  <section id="reservation" class="reservation">
+    <h2>Make a Reservation</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="datetime-local" required>
+      <textarea rows="4" placeholder="Special Requests"></textarea>
+      <button type="submit">Reserve Now</button>
+    </form>
+  </section>
+
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>For any inquiries, feel free to reach out!</p>
+    <p>Email: siddarthks89@gmail.com</p>
+    <p>Phone: +918217026639 </p>
+  </section>
+
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Restaurant. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelector('.cta-button').addEventListener('click', () => {
+      document.querySelector('#reservation').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
